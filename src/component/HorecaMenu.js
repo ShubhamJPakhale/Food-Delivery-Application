@@ -4,7 +4,7 @@ import MenuItems from "./Menuitems";
 
 const HorecaMenu = ({ itemCategory }) => {
   return (
-    <div>
+    <div data-testid="menuitems">
       {itemCategory?.itemCards?.map((item, index) => (
         <MenuItems key={index} menu={item?.card?.info} />
         //console.log(item)

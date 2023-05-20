@@ -15,8 +15,9 @@ class About extends React.Component {
         avatar_url: "",
       },
       track: [
-        "React",
-        "Redux",
+        "React.js",
+        "Redux.js",
+        "Redux Toolkit",
         "Hooks",
         "Node.js",
         "Swiggy Api",
@@ -38,8 +39,8 @@ class About extends React.Component {
 
   render() {
     return (
-      <div className="flex justify-around m-[15px]">
-        <div className="bg-orange-50 m-5">
+      <div className="flex justify-around md:m-[15px] flex-wrap md:flex-nowrap">
+        <div className="bg-orange-50 m-5 h-auto">
           <h1 className="text-center text-black-200 font-bold text-2xl">
             About Me
           </h1>
@@ -59,15 +60,15 @@ class About extends React.Component {
             problem with awesome solution and make life easier with coding
           </h3>
         </div>
-        <div className="aboutmeright">
+        <div className=" m-5 h-auto ">
           <h1 className="text-center text-black-200 font-bold text-2xl m-5 ">
             About This Project{" "}
           </h1>
           <h3 className="text-xl font-medium text-black">
-            In this Project we have used swiggy public api for getting
-            restaurant data and with the help of{" "}
+            In this Project i have used swiggy public api for getting restaurant
+            data and with the help of{" "}
             <strong className="text-amber-400 font-bold text-2xl">React</strong>{" "}
-            we created this whole food junction application
+            i created this whole food junction application
           </h3>
           <h3 className="text-base font-medium text-black">
             {" "}

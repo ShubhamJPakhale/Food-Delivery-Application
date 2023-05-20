@@ -27,20 +27,23 @@ const Menuitems = ({ menu }) => {
   const cartItems = useSelector((store) => store.cart.items);
 
   return (
-    <div className="flex items-center justify-center pl-2 pr-2 m-6">
+    <div className="flex justify-between sm:justify-between lg:justify-center  basis-[848px] max-h-[180px] p-5 border-b border-gray">
+      {/* items-center justify-center flex justify-center pl-2 pr-2 m-6 flex justify-between basis-[848px] max-h-[180px] p-5 border-b border-gray*/}
       <div>
-        <div className="font-semibold text-lg w-[700px] m-2 ">{name}</div>
+        <div className="font-semibold text-base md:text-lg w-auto md:w-[700px] m-2 ">
+          {name}
+        </div>
         <div className="font-light text-normal m-2">
           ₹ {Math.round(price / 100)}
         </div>
       </div>
-      <div className="ml-5 mt-2 mb-2 w-[100px] h-[100px]">
+      <div className="ml-5 mt-2 mb-2 w-[60px] h-[60px] md:w-[100px] md:h-[100px]">
         {imageId && (
           <img
             src={ITEM_IMG_CDN_URL + imageId}
             alt={name}
             loading="lazy"
-            className="w-[100px] h-[100px] rounded-lg"
+            className="w-[60px] h-[60px] md:w-[100px] md:h-[100px] rounded-lg"
           />
         )}
         {/* below code for if imageid is not available then we are using hardcode image id for showing image in menuitems */}
@@ -49,13 +52,13 @@ const Menuitems = ({ menu }) => {
             src={ITEM_IMG_CDN_URL + "vclexhmfqsns1ltlhmvb"}
             alt={name}
             loading="lazy"
-            className="w-[100px] h-[100px] rounded-lg"
+            className="w-[60px] h-[60px] md:w-[100px] md:h-[100px] rounded-lg"
           />
         )}
 
-        <div className="bg-white flex justify-evenly items-center w-[85px] h-[30px] ml-2 mr-2 mt-1 text-gray-count outline-none border border-gray ">
+        <div className="bg-white flex justify-evenly items-center w-[45px] h-[20px] md:w-[85px] md:h-[30px]  ml-2 mr-2 my-[-5px] text-gray-count outline-none border border-gray ">
           <button
-            className="text-xl font-semibold text-green-700 "
+            className="text-xl font-semibold text-green-700 z-100"
             onClick={() => handleRemoveItem(id)}
           >
             {" "}
@@ -65,6 +68,7 @@ const Menuitems = ({ menu }) => {
           <button
             className="text-xl font-semibold text-green-700 "
             onClick={() => handleAddItem(menu)}
+            data-testid="addbtn"
           >
             +
           </button>

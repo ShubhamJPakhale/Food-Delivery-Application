@@ -5,7 +5,7 @@ import contactus from "../images/contactus.svg";
 const Contact = () => {
   return (
     <>
-      <div className="flex justify-between m-5">
+      <div className="flex justify-between m-5 flex-wrap lg:flex-nowrap">
         <div className="float-left">
           <img src={contactus} />
         </div>

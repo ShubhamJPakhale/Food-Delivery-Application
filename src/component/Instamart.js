@@ -37,7 +37,7 @@ const Instamart = () => {
   return (
     <div className="container">
       <div className="card-container">
-        <div className="mt-2 card-container-title pb-5">
+        <div className="sm:mt-2 card-container-title pb-5 ">
           Frequently Asked Question's
         </div>
         {FAQs.map((data) => {

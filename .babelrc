@@ -1,10 +1,8 @@
 {
   // code for removing console from app while building ->
   "plugins": [["transform-remove-console", { "exclude": ["error", "warn"] }]],
-  "presets": [["@babel/preset-env", { "targets": { "node": "current" } }]]
-  // code for adding babel enviorment to react code ->
-  // "presets": [
-  //     ["@babel/preset-env", { "targets": { "node": "current" } }],
-  //     ["@babel/preset-react", { "runtime": "automatic"}]
-  // ]
+  "presets": [
+    ["@babel/preset-env", { "targets": { "node": "current" } }], // this is required for setting current environment to test environment which is set while npx jest --init
+    ["@babel/preset-react", { "runtime": "automatic" }] // this is for avoiding jsx error while running react library test cases
+  ]
 }

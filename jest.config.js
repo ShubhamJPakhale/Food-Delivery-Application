@@ -88,7 +88,11 @@ module.exports = {
   // ],
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
-  // moduleNameMapper: {},
+
+  // This is used to avoid the error of png svg jpg while testing in react
+  //  moduleNameMapper: {
+  //   "\\.(jpg|png|svg)$":"../mocks/dummyLogo.js",
+  //  },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],
