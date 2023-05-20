@@ -4,7 +4,7 @@
   "description": "This application build with React.js framework using swiggy api",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --no-minify",
+    "build": "parcel build index.html ",
     "test": "jest",
     "watch-test": "jest --watchAll"
   },
