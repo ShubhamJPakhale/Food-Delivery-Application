@@ -28,7 +28,6 @@ const Menuitems = ({ menu }) => {
 
   return (
     <div className="flex justify-between sm:justify-between lg:justify-center  basis-[848px] max-h-[180px] p-5 border-b border-gray">
-      {/* items-center justify-center flex justify-center pl-2 pr-2 m-6 flex justify-between basis-[848px] max-h-[180px] p-5 border-b border-gray*/}
       <div>
         <div className="font-semibold text-base md:text-lg w-auto md:w-[700px] m-2 ">
           {name}

@@ -1,21 +1,21 @@
 export const IMG_URL_ID =
   "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
 
-// Old Data - Swiggy API to get Restaurant data with corsanywhere which avoids cors error while opening application in any
-//export const swiggy_api_URL =
-//"https://corsanywhere.herokuapp.com/https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5204303&lng=73.8567437&page_type=DESKTOP_WEB_LISTING";
+// live Data - Swiggy API to get Restaurant data with corsproxy which avoids cors error while opening application in any
+export const swiggy_api_URL =
+  "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5204303&lng=73.8567437&page_type=DESKTOP_WEB_LISTING";
 
 // Live Data - Below api is using node.js module to fetch the data from swiggy api
-export const swiggy_api_URL =
-  "https://foodjunctionapi.onrender.com/restaurant?lat=18.5204303&lng=73.8567437&page_type=DESKTOP_WEB_LISTING";
+// export const swiggy_api_URL =
+//   "https://foodjunctionapi.onrender.com/restaurant?lat=18.5204303&lng=73.8567437&page_type=DESKTOP_WEB_LISTING";
 
-//Old Data
-//export const Restaurant_Menu_URL=
-//  "https://corsanywhere.herokuapp.com/https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5204303&lng=73.8567437&restaurantId=";
-
-//Live Data
+//LIVE Data - using corsproxy
 export const Restaurant_Menu_URL =
-  "https://foodjunctionapi.onrender.com/menu?page-type=REGULAR_MENU&complete-menu=true&lat=18.5204303&lng=73.8567437&restaurantId=";
+  "https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5204303&lng=73.8567437&restaurantId=";
+
+//Live Data - using node.js server
+// export const Restaurant_Menu_URL =
+//   "https://foodjunctionapi.onrender.com/menu?page-type=REGULAR_MENU&complete-menu=true&lat=18.5204303&lng=73.8567437&restaurantId=";
 
 // Image CDN URL for Restaurant Menu
 export const ITEM_IMG_CDN_URL =
